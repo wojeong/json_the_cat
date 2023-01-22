@@ -5,7 +5,7 @@ const fetchBreedDescription = function(breedName, callback) {
     const cats = JSON.parse(body);
     const cat = cats[0];
     //console.log(cat.description);
-    return cat.description;
+    callback(error, cat.description);
   });
 };
 
